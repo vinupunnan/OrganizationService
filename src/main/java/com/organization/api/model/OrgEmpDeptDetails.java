@@ -2,15 +2,18 @@ package com.organization.api.model;
 
 public class OrgEmpDeptDetails {
 	
-	public OrgEmpDeptDetails(String employeeName, String empDesignation, String departmentName) {
+	
+	private  String employeeName;
+	public OrgEmpDeptDetails(String employeeName, String empDesignation, String departmentName, String deptLocation) {
 		super();
 		this.employeeName = employeeName;
 		this.empDesignation = empDesignation;
 		this.departmentName = departmentName;
+		this.deptLocation = deptLocation;
 	}
-	public String employeeName;
-	public String empDesignation;
-	public String departmentName;
+	private  String empDesignation;
+	private  String departmentName;
+	private  String  deptLocation;
 	
 	public String getEmployeeName() {
 		return employeeName;
@@ -30,6 +33,14 @@ public class OrgEmpDeptDetails {
 	public void setDepartmentName(String departmentName) {
 		this.departmentName = departmentName;
 	}
+	public String getDeptLocation() {
+		return deptLocation;
+	}
+	public void setDeptLocation(String deptLocation) {
+		this.deptLocation = deptLocation;
+	}
+	
+	
 	
 
 }
