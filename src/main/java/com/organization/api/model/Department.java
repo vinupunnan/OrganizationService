@@ -1,4 +1,4 @@
-package com.department.api.model;
+package com.organization.api.model;
 
 public class Department {
 	
